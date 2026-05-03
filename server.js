@@ -11,7 +11,6 @@ connectDB();
 
 // CORS middleware
 app.use(cors({ origin: "*" }));
-app.options('*', cors({ origin: "*" })); // Enable pre-flight for all routes
 
 // Allow JSON payloads that include small base64 images.
 app.use(express.json({ limit: "5mb" }));
